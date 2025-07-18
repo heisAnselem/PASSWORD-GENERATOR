@@ -86,3 +86,8 @@ button:hover {
 #passwordValue:not(:empty)::before {
   content: none;
 }
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
