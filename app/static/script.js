@@ -20,5 +20,8 @@ document.getElementById('generateButton').addEventListener('click', async () => 
   });
 
   const data = await response.json();
+  if (!response.ok) {
+  document.getElementById('passwordValue').textContent = data.error;
+} else {
   document.getElementById('passwordValue').textContent = data.password;
 });
