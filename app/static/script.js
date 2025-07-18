@@ -24,4 +24,5 @@ document.getElementById('generateButton').addEventListener('click', async () => 
   document.getElementById('passwordValue').textContent = data.error;
 } else {
   document.getElementById('passwordValue').textContent = data.password;
+  }
 });
