@@ -20,7 +20,7 @@ def generate_password(data:PasswordRequest) -> str:
     if data.include_numbers==True:
         pool+=str.digits
     if not pool:
-        raise HTTPException(status_code=400, detail="Please select at least one character type.")
+        return {"error": "Please select at least one character type."}
     password_list=rd.choices(pool,k=data.length)
     rd.shuffle(password_list)
     password="".join(password_list)
