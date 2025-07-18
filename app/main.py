@@ -8,7 +8,7 @@ app = FastAPI()
 
 
 # Serve static files (CSS, JS)
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 # HTML templates directory
 templates = Jinja2Templates(directory="templates")
