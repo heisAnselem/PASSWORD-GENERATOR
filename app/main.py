@@ -20,6 +20,6 @@ async def home(request: Request):
 @app.post("/generate-password")
 async def password_api(data: PasswordRequest):
     password = generate_password(data)
-    if isinstance(password, dict) and "error" in result:
+    if isinstance(password, dict) and "error" in password:
         return JSONResponse(content=password, status_code=400)
     return JSONResponse(content={"password": password})
