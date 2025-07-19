@@ -13,7 +13,7 @@ A simple and customizable password generator built with **Python (FastAPI)**, **
 - **Deployment:** Render
 
 ## 🚀 Live Demo
-[👉 Try it here](https://password-generator-7fz0.onrender.com)
+[👉 Try it here](https://bit.ly/3GVl2hN)
 
 ## 💡 Why I Built This
 I’m currently learning machine learning, but I wanted to build small, fun projects to improve my Python programming and get more comfortable with full-stack workflows.
